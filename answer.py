@@ -33,7 +33,7 @@ def strings():
 
     # Concatenate variable stevens with string " is great" and assign it to variable great.
  
-    great = stevens + 'is great'
+    great = stevens + " is great"
 
     # Replace "great" with "good" in variable great and assign it to a new variable good.
 
@@ -53,8 +53,8 @@ def list_1D():
 
     # Split variable hoboken on a delimiter(comma) into a list of substrings and assign it to a new variable hoboken_list.
 
-    hoboken_list = s.split(',')
-
+    hoboken_list = hoboken.split(',')
+    
     # Get the first item in the hoboken_list and assign it to a new variable hoboken_first_item.
 
     hoboken_first_item = hoboken_list[0]
@@ -65,9 +65,10 @@ def list_1D():
     # Inplace sort list l (use .sort() ).
 
     l.sort()
+    print(l)
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
 
-    new_l = l[5:11]
+    new_l = l[4:10]
 
     return hoboken,hoboken_list, hoboken_first_item, l, new_l
 
@@ -81,8 +82,8 @@ def list_2D():
 
     # Collect the items in the last column of matrix A using list comprehension and assign it to a new variable last_column.
 
-    last_column = [row[-1] for row in A]
-
+    last_column = [item[-1] for item in A]
+    
     # Get the item at the last row and last column of A.
 
     a = [-1][-1]
@@ -91,7 +92,6 @@ def list_2D():
 
     b = [1][0]
     
-    print(last_column)
 
     return A,last_column, a, b
 
