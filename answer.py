@@ -65,11 +65,11 @@ def list_1D():
     # Inplace sort list l (use .sort() ).
 
     l.sort()
-
+    
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
 
     new_l = l[4:10]
-
+    
     return hoboken,hoboken_list, hoboken_first_item, l, new_l
 
 def list_2D():
@@ -112,7 +112,7 @@ def dictionary():
 
     # Increase the value that key "quantity" map to by 1.
 
-    fruit_dict["quantity"] = 19
+    fruit_dict["quantity"] += 1
 
     return fruit_dict, f
 def dictionary_nested():
